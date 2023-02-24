@@ -1,0 +1,1 @@
+docker run --name kali --privileged --cap-add=NET_ADMIN -p 3000-3005:3000-3005 -p 8000-8050:8000-8050 -p 8080:8080 -p 8090:8090 -p 9000-9010:9000-9010 -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix:ro -v /etc/localtime:/etc/localtime:ro --restart unless-stopped -it kalilinux/kali-rolling /bin/bash
